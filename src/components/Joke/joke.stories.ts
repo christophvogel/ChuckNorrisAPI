@@ -11,6 +11,7 @@ export default {
 export const Chuck = (args, { loaded: { chuckJoke } }) => {
   return createElement("p", {
     innerText: chuckJoke.value.joke,
+    className: "joke",
   });
 };
 
