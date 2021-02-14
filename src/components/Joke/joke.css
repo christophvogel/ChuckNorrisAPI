@@ -1,0 +1,17 @@
+@keyframes blink {
+  50% {
+    border-color: #ff0000;
+  }
+}
+.joke {
+  border: 8px solid #000000;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  width: 20em;
+  height: 5em;
+  margin: -2.5em -10em;
+  text-align: center;
+
+  animation: blink 0.5s step-end infinite alternate;
+}
