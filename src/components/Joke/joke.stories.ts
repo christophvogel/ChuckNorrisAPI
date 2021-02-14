@@ -14,6 +14,7 @@ export const Chuck = (args, { loaded: { chuckJoke } }) => {
     className: "joke",
     childs: [
       createElement("button", {
+        className: "button",
         innerText: "New Joke",
         onclick: function refreshPage() {
           window.location.reload();
