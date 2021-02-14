@@ -12,6 +12,14 @@ export const Chuck = (args, { loaded: { chuckJoke } }) => {
   return createElement("p", {
     innerText: chuckJoke.value.joke,
     className: "joke",
+    childs: [
+      createElement("button", {
+        innerText: "New Joke",
+        onclick: function refreshPage() {
+          window.location.reload();
+        },
+      }),
+    ],
   });
 };
 
@@ -20,3 +28,11 @@ Chuck.loaders = [
     chuckJoke: await getRandomJoke(),
   }),
 ];
+
+function refreshPage() {
+  window.location.reload();
+}
+// const refresh = return createElement("button", {
+//   innerText: "refresh",
+//   onClick: window.location.reload(),
+// });
