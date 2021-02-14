@@ -5,13 +5,16 @@
 }
 .joke {
   border: 8px solid #000000;
-  position: fixed;
-  top: 50%;
-  right: 50%;
-  width: 20em;
-  height: 5em;
-  margin: -2.5em -10em;
+  font-weight: bolder;
+  width: 23em;
+  height: 23em;
+  font-size: 1em;
   text-align: center;
-
+  color: white;
+  text-shadow: 0 0 4px black;
   animation: blink 0.5s step-end infinite alternate;
+  background-image: url("https://pngimg.com/uploads/chuck_norris/chuck_norris_PNG9.png");
+}
+body {
+  background-color: lightgrey;
 }
