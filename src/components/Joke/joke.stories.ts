@@ -10,7 +10,7 @@ export default {
 
 export const Chuck = (args, { loaded: { chuckJoke } }) => {
   return createElement("p", {
-    innerText: chuckJoke.value.joke,
+    innerHTML: chuckJoke.value.joke,
     className: "joke",
     childs: [
       createElement("button", {
