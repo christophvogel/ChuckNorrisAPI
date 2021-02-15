@@ -30,9 +30,9 @@ Chuck.loaders = [
   }),
 ];
 
-function refreshPage() {
-  window.location.reload();
-}
+// function refreshPage() {
+//   window.location.reload();
+// }
 // const refresh = return createElement("button", {
 //   innerText: "refresh",
 //   onClick: window.location.reload(),
